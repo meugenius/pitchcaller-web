@@ -4,7 +4,7 @@
 
 Pitch Caller is a secure, high-performance utility designed for modern baseball and softball batteries. It replaces traditional clipboards and hand signals with private Bluetooth communication and real-time performance analytics.
 
-## 🚀 Key Features (Elite v1.1.1)
+## 🚀 Key Features (Elite v1.1.2)
 * **One-Tap PDF Reports**: Export professional scouting data to share with recruiters and players.
 * **Fatigue Analytics**: Visual Inning-by-Inning charts to monitor pitcher command.
 * **Density Heatmaps**: Identify location "hot zones" and miss tendencies in real-time.
