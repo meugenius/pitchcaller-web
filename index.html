@@ -6,78 +6,106 @@
     <title>Pitch Caller | Elite Baseball & Softball Analytics</title>
     <style>
         :root {
-            --primary: #1976D2;
+            --primary: #1565C0;
             --secondary: #00BCD4;
             --dark: #121212;
             --light: #f5f5f5;
+            --accent: #FF9800;
         }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; background: var(--light); }
-        header { background: var(--primary); color: white; padding: 4rem 1rem; text-align: center; }
-        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
-        .badge { background: var(--secondary); color: white; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: bold; }
-        h1 { margin: 0; font-size: 3rem; }
+        header { background: var(--primary); color: white; padding: 3rem 1rem; text-align: center; }
+        .logo { width: 120px; height: 120px; border-radius: 50%; border: 4px solid white; margin-bottom: 1rem; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        .badge { background: var(--accent); color: white; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: bold; }
+        h1 { margin: 0; font-size: 2.5rem; letter-spacing: -1px; }
         h2 { color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 0.5rem; margin-top: 2rem; }
-        .features { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 2rem 0; }
-        .feature-item { background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .footer { text-align: center; padding: 2rem; color: #888; font-size: 0.9rem; }
-        .policy-box { background: #eee; padding: 1.5rem; border-radius: 8px; font-size: 0.9rem; }
-        @media (max-width: 600px) { .features { grid-template-columns: 1fr; } }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .feature-item { background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: transform 0.2s; }
+        .feature-item:hover { transform: translateY(-5px); }
+        .feature-item strong { display: block; margin-bottom: 0.5rem; font-size: 1.1rem; color: var(--primary); }
+        .store-buttons { display: flex; justify-content: center; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
+        .store-button { background: #000; color: white; padding: 0.8rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px; }
+        .store-button:hover { background: #333; }
+        .footer { text-align: center; padding: 3rem 2rem; color: #888; font-size: 0.9rem; border-top: 1px solid #ddd; }
+        .policy-box { background: white; padding: 2rem; border-radius: 12px; font-size: 0.95rem; border: 1px solid #eee; }
+        @media (max-width: 600px) { h1 { font-size: 2rem; } }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Pitch Caller</h1>
-    <p>The Elite Digital Sign & Analytics Platform <span class="badge">v1.1.1</span></p>
+    <img src="logo.png" alt="Pitch Caller Elite Logo" class="logo">
+    <h1>Pitch Caller Elite</h1>
+    <p>Professional Signaling & Scouting Suite <span class="badge">v1.1.26 (Code 27)</span></p>
 </header>
 
 <div class="container">
-    <section id="about">
-        <h2>Professional Scouting in Your Pocket</h2>
-        <p>Pitch Caller Elite transforms your dugout workflow. Move beyond traditional clipboards and hand signals with high-performance analytics, private Bluetooth communication, and professional reporting.</p>
+    <section id="about" style="text-align: center;">
+        <h2>Ditch the Hand Signs. Own the Battery.</h2>
+        <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto;">Pitch Caller Elite is the professional command center for modern baseball and softball batteries. Designed for the dugout and built for the grind, this suite moves your signaling from the fingers to the catcher's earpiece, ensuring 100% stealth and zero stolen signs.</p>
     </section>
+
+    <div class="store-buttons">
+        <a href="https://play.google.com/store/apps/details?id=com.pitchcaller.app" class="store-button">
+            <span>GET IT ON</span>
+            <strong>Google Play</strong>
+        </a>
+        <a href="#" class="store-button">
+            <span>Download on the</span>
+            <strong>App Store</strong>
+        </a>
+        <p style="width: 100%; text-align: center; font-size: 0.8rem; color: #888;">* iOS Version currently in review - Arriving this week!</p>
+    </div>
 
     <section class="features">
         <div class="feature-item">
-            <strong>📊 PDF Stats Reports</strong>
-            <p>Generate and share professional scouting data with recruiters and players with one tap.</p>
+            <strong>✏️ Total Customization</strong>
+            <p>LONG-PRESS any button to rename it or change the voice sign. Match your team's unique terminology, secret codes, and pitch mix.</p>
         </div>
         <div class="feature-item">
-            <strong>📈 Inning fatigue Tracking</strong>
-            <p>Visual bar charts identify exactly when your pitcher starts losing their command.</p>
+            <strong>🎯 Advanced Grid</strong>
+            <p>Go beyond 3x3. Utilize the Advanced Matrix for pinpoint accuracy, tracking "chase" balls and diagnostic outcomes with precision.</p>
         </div>
         <div class="feature-item">
-            <strong>🔥 Density Heatmaps</strong>
-            <p>Identify location "hot zones" and miss tendencies in real-time during live play.</p>
+            <strong>🎧 Stealth Audio</strong>
+            <p>Broadcast signs instantly to any Bluetooth earpiece. Adjustable pitch and speed ensure crystal clear delivery in any environment.</p>
         </div>
         <div class="feature-item">
-            <strong>🎧 Bluetooth Signaling</strong>
-            <p>Secure, private audio communication between coach and catcher with sign-masking technology.</p>
+            <strong>🎤 Live Coaching (Mic)</strong>
+            <p>Built-in push-to-talk Walkie-Talkie for real-time adjustments or calling tactical timeouts without leaving the dugout.</p>
+        </div>
+        <div class="feature-item">
+            <strong>📊 Elite Scouting Reports</strong>
+            <p>Generate high-fidelity PDF reports with dynamic density and success heatmaps. AirDrop or text them to your staff instantly.</p>
+        </div>
+        <div class="feature-item">
+            <strong>📈 Inning Performance</strong>
+            <p>Identify exactly when your pitcher starts losing command with visual fatigue tracking and load analytics.</p>
         </div>
     </section>
 
     <section id="privacy">
-        <h2>Privacy Policy</h2>
+        <h2>Privacy & Data Safety</h2>
         <div class="policy-box">
-            <p><strong>Last Updated: July 2026</strong></p>
-            <p>Pitch Caller is committed to your privacy. Because our app is designed for elite security on the field, we follow a strict <strong>Zero-Data Collection</strong> policy:</p>
+            <p><strong>Last Updated: September 2026</strong></p>
+            <p>Pitch Caller is built for elite tactical security. We follow a strict <strong>Zero-Data Collection</strong> policy to ensure your competitive edge stays in your dugout.</p>
             <ul>
-                <li><strong>No Data Collection:</strong> Pitch Caller does not collect, store, or transmit any personal information, location data, or pitcher performance data to external servers.</li>
-                <li><strong>Local Storage Only:</strong> All pitcher profiles, history logs, and analytics are stored 100% locally on your device.</li>
-                <li><strong>No Accounts Required:</strong> You do not need to create an account or provide an email to use the app.</li>
-                <li><strong>Offline Ready:</strong> The app functions entirely without an internet connection to ensure your data stays in your dugout.</li>
+                <li><strong>No Cloud Storage:</strong> All pitcher profiles, history, and analytics are stored 100% locally on your device. We do not use external servers.</li>
+                <li><strong>Permissions:</strong> We require Microphone access solely for the <em>Live Coaching</em> feature and Bluetooth for earpiece signaling. No audio is ever recorded or shared.</li>
+                <li><strong>No Accounts:</strong> No sign-up, no emails, no tracking. You are ready to call games instantly and anonymously.</li>
+                <li><strong>Data Control:</strong> You can delete all pitcher data at any time directly within the app settings.</li>
             </ul>
-            <p>For support, please contact: <a href="mailto:pitchcaller.support@gmail.com">pitchcaller.support@gmail.com</a></p>
+            <p>Support & Data Deletion Requests: <a href="mailto:pitchcaller.support@gmail.com">pitchcaller.support@gmail.com</a></p>
         </div>
     </section>
 
-    <section id="terms">
+    <section id="legal">
         <h2>Legal Terms</h2>
-        <p style="font-size: 0.8rem; color: #666;">Pitch Caller is for informational purposes only. It is the user's sole responsibility to ensure that electronic communication devices are permitted by their specific league or tournament rules. The developer is not liable for any injuries, accidents, or game outcomes resulting from the use of this software.</p>
+        <p style="font-size: 0.8rem; color: #666;">Pitch Caller is for informational purposes only. It is the user's sole responsibility to ensure that electronic communication devices are permitted by their specific league or tournament rules. The developer is not liable for any injuries, accidents, or game outcomes resulting from the use of this software. &copy; 2026 Manuel Eugenio.</p>
     </section>
 
     <div class="footer">
-        &copy; 2026 Pitch Caller App. Built for the Battery.
+        Built for the Battery. Pitch Caller Elite &copy; 2026.
     </div>
 </div>
 
