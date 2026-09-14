@@ -11,6 +11,7 @@
             --dark: #121212;
             --light: #f5f5f5;
             --accent: #FF9800;
+            --success: #4CAF50;
         }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; background: var(--light); }
         header { background: var(--primary); color: white; padding: 3rem 1rem; text-align: center; }
@@ -23,12 +24,21 @@
         .feature-item { background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: transform 0.2s; }
         .feature-item:hover { transform: translateY(-5px); }
         .feature-item strong { display: block; margin-bottom: 0.5rem; font-size: 1.1rem; color: var(--primary); }
+
+        .analytics-showcase { background: #fff; padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 1px solid #e0e0e0; }
+        .analytics-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1rem; }
+        .analytics-card { border-left: 4px solid var(--secondary); padding-left: 1rem; }
+        .analytics-card h3 { margin: 0 0 0.5rem 0; font-size: 1.1rem; color: #333; }
+
         .store-buttons { display: flex; justify-content: center; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
         .store-button { background: #000; color: white; padding: 0.8rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px; }
         .store-button:hover { background: #333; }
         .footer { text-align: center; padding: 3rem 2rem; color: #888; font-size: 0.9rem; border-top: 1px solid #ddd; }
         .policy-box { background: white; padding: 2rem; border-radius: 12px; font-size: 0.95rem; border: 1px solid #eee; }
-        @media (max-width: 600px) { h1 { font-size: 2rem; } }
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .analytics-grid { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
@@ -57,30 +67,48 @@
         <p style="width: 100%; text-align: center; font-size: 0.8rem; color: #888;">* iOS Version currently in review - Arriving this week!</p>
     </div>
 
+    <section id="analytics">
+        <h2>Pro-Grade Pitching Analytics</h2>
+        <div class="analytics-showcase">
+            <p>Data-driven decisions shouldn't wait until after the game. Pitch Caller Elite provides real-time diagnostic tools to help coaches identify fatigue, mechanical slips, and opponent weaknesses as they happen.</p>
+
+            <div class="analytics-grid">
+                <div class="analytics-card">
+                    <h3>🔥 Precision Heatmaps</h3>
+                    <p>Visualize "Pitch Density" and "Pitch Success" side-by-side. Identify exactly where your pitcher is dominating and where they are missing their spots.</p>
+                </div>
+                <div class="analytics-card">
+                    <h3>📉 Fatigue Tracking</h3>
+                    <p>Monitor inning-by-inning performance. Visual bar charts track accuracy percentage and pitch load to help you make the right call for the bullpen.</p>
+                </div>
+                <div class="analytics-card">
+                    <h3>🎯 Advanced Grid Matrix</h3>
+                    <p>Go beyond the 3x3 zone. Track balls, "chase" pitches, and diagnostic outcomes with our high-fidelity matrix system.</p>
+                </div>
+                <div class="analytics-card">
+                    <h3>📊 High-Fidelity PDF Reports</h3>
+                    <p>Export professional scouting reports with zone-by-zone pitch counts and coaching notes. Share instantly via AirDrop, Text, or Email.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="features">
         <div class="feature-item">
             <strong>✏️ Total Customization</strong>
-            <p>LONG-PRESS any button to rename it or change the voice sign. Match your team's unique terminology, secret codes, and pitch mix.</p>
-        </div>
-        <div class="feature-item">
-            <strong>🎯 Advanced Grid</strong>
-            <p>Go beyond 3x3. Utilize the Advanced Matrix for pinpoint accuracy, tracking "chase" balls and diagnostic outcomes with precision.</p>
+            <p>LONG-PRESS any button to rename it or change the voice sign. Match your team's unique terminology and pitch mix.</p>
         </div>
         <div class="feature-item">
             <strong>🎧 Stealth Audio</strong>
-            <p>Broadcast signs instantly to any Bluetooth earpiece. Adjustable pitch and speed ensure crystal clear delivery in any environment.</p>
+            <p>Broadcast signs instantly to any Bluetooth earpiece. Adjustable pitch and speed ensure crystal clear delivery.</p>
         </div>
         <div class="feature-item">
             <strong>🎤 Live Coaching (Mic)</strong>
-            <p>Built-in push-to-talk Walkie-Talkie for real-time adjustments or calling tactical timeouts without leaving the dugout.</p>
+            <p>Built-in push-to-talk Walkie-Talkie for real-time adjustments without leaving the dugout.</p>
         </div>
         <div class="feature-item">
-            <strong>📊 Elite Scouting Reports</strong>
-            <p>Generate high-fidelity PDF reports with dynamic density and success heatmaps. AirDrop or text them to your staff instantly.</p>
-        </div>
-        <div class="feature-item">
-            <strong>📈 Inning Performance</strong>
-            <p>Identify exactly when your pitcher starts losing command with visual fatigue tracking and load analytics.</p>
+            <strong>🤝 Smart Shake Off</strong>
+            <p>Track when pitchers disagree with calls and let the system suggest alternatives to keep the battery in sync.</p>
         </div>
     </section>
 
@@ -90,22 +118,16 @@
             <p><strong>Last Updated: September 2026</strong></p>
             <p>Pitch Caller is built for elite tactical security. We follow a strict <strong>Zero-Data Collection</strong> policy to ensure your competitive edge stays in your dugout.</p>
             <ul>
-                <li><strong>No Cloud Storage:</strong> All pitcher profiles, history, and analytics are stored 100% locally on your device. We do not use external servers.</li>
-                <li><strong>Permissions:</strong> We require Microphone access solely for the <em>Live Coaching</em> feature and Bluetooth for earpiece signaling. No audio is ever recorded or shared.</li>
-                <li><strong>No Accounts:</strong> No sign-up, no emails, no tracking. You are ready to call games instantly and anonymously.</li>
-                <li><strong>Data Control:</strong> You can delete all pitcher data at any time directly within the app settings.</li>
+                <li><strong>No Cloud Storage:</strong> All pitcher profiles, history, and analytics are stored 100% locally on your device.</li>
+                <li><strong>Permissions:</strong> Microphone access is used solely for the <em>Live Coaching</em> feature and Bluetooth for signaling. No data is ever shared.</li>
+                <li><strong>Anonymous Use:</strong> No accounts, sign-ups, or tracking. Ready to call games instantly.</li>
             </ul>
-            <p>Support & Data Deletion Requests: <a href="mailto:pitchcaller.support@gmail.com">pitchcaller.support@gmail.com</a></p>
+            <p>Support: <a href="mailto:pitchcaller.support@gmail.com">pitchcaller.support@gmail.com</a></p>
         </div>
     </section>
 
-    <section id="legal">
-        <h2>Legal Terms</h2>
-        <p style="font-size: 0.8rem; color: #666;">Pitch Caller is for informational purposes only. It is the user's sole responsibility to ensure that electronic communication devices are permitted by their specific league or tournament rules. The developer is not liable for any injuries, accidents, or game outcomes resulting from the use of this software. &copy; 2026 Manuel Eugenio.</p>
-    </section>
-
     <div class="footer">
-        Built for the Battery. Pitch Caller Elite &copy; 2026.
+        Built for the Battery. Pitch Caller Elite &copy; 2026 Manuel Eugenio.
     </div>
 </div>
 
